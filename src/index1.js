@@ -46,7 +46,12 @@ function myFunction() {
       text = "perfect";
       }
     }
-    document.getElementById("demo").innerHTML = "Hello "+ name + " !!!" + " your weight is " + text +" at an age of " + age;
+
+}
+function display(text){
+  let my_Function=myFunction(text);
+  document.getElementById("demo").innerHTML = "Hello "+ name + " !!!" + " your weight is " + text +" at an age of " + age;
+
 
 }
   

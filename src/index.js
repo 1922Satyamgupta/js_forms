@@ -1,5 +1,5 @@
 mylistitems=[];
-errMsgs=[];
+error_msg=[];
 function fetchData(){
   let id=document.getElementById("product-id").value;
   let name=document.getElementById("product-Name").value;
@@ -7,9 +7,11 @@ function fetchData(){
   item={
     "id":id,
     "name":name,
-    "price":price};
- return item;}
-function displayData()
+    "price":price
+  };
+ return item;
+}
+ function display()
 {
   let table = document.getElementById("myTable");
   table.innerHTML="<th>Prodcut id</th> <th>Prodcut Name</th> <th>Prodcut Price </th>";
@@ -21,6 +23,5 @@ function myFunction(){
   let fetchedData=fetchData();
   console.log(fetchedData);
   mylistitems.push(fetchedData);
-  displayData()
-
+  display()
 }
